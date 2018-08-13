@@ -9,8 +9,8 @@ html{
 }
 
 body {
-	margin: 0;
-	padding: 0;
+	margin: auto auto;
+	padding: auto;
 	height: 100%;
 	font-size: 1.4rem;
 	background-color: #000;
@@ -147,7 +147,7 @@ h1 {
   display: inline-block;
   float: left;
   position: relative;
-  top: 35%;
+  top: 38rem;
   font-weight: 400;
   color: #deb887 !important;
   letter-spacing: .1rem;
@@ -161,9 +161,9 @@ h1 {
   width: 50rem;
   height: 50rem;
   border-radius: 50%;
-  margin: auto auto;
+  margin: 15rem auto;
   position: relative;
-  top: 11rem;
+  top: -3rem;
 }
 
 .eye {
@@ -174,7 +174,7 @@ h1 {
   height: 830px;
   margin: 0 auto;
   opacity: .3;
-  animation: ellipseOrbit 180s linear infinite;
+  animation: ellipseRotate 200s linear infinite;
 }
 
 
