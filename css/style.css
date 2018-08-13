@@ -231,7 +231,7 @@ h1 {
   width: 87.8%;
   height: 87.8%;
   margin: 0 auto;
-  opacity: .3;
+  opacity: .2;
   animation: ellipseOrbit 60s linear infinite;
 }
 
