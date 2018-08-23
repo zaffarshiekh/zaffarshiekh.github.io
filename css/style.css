@@ -69,7 +69,7 @@ h1 {
 .header__item {
   display: inline-block;
   float: left;
-  padding-left: px;
+  padding-left: auto;
 }
 
 .menu-icon__line {
@@ -98,11 +98,11 @@ h1 {
 }
 
 .heading {
-  width: 90%;
+  width: 100%;
   font-size: 2rem;
   font-weight: normal;
   line-height: 1.2rem;
-  margin: 0 35px;
+  margin: auto auto;
   text-align: center;
   color: #bc8f8f;
 }
@@ -152,8 +152,8 @@ h1 {
   float: left;
   position: relative;
   top: 38rem;
-  font-weight: 400;
-  color: #deb887 !important;
+  font-weight: bold;
+  color: #000 !important;
   letter-spacing: .1rem;
   left: -18rem;
   margin: 0;
