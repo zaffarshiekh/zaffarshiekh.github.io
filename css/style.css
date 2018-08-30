@@ -147,7 +147,7 @@ h1 {
 }
 
 .phrase {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   display: inline-block;
   float: left;
   position: relative;
@@ -178,7 +178,7 @@ h1 {
   height: 830px;
   margin: 0 auto;
   opacity: .3;
-  animation: ellipseRotate 200s linear infinite;
+  animation: ellipseOrbit 200s linear infinite;
 }
 
 
@@ -222,7 +222,7 @@ h1 {
   height: 100%;
   border-width: 5px;
   border-color: rgba(9,56,62,.3);
-  animation: ellipseOrbit 15s linear infinite;
+  animation: ellipseRotate 15s linear infinite;
 }
 
 /**=====================================
@@ -236,7 +236,7 @@ h1 {
   height: 87.8%;
   margin: 0 auto;
   opacity: .2;
-  animation: ellipseOrbit 50s linear infinite;
+  animation: ellipseRotate 50s linear infinite;
 }
 
 .ellipse__outer--thick {
@@ -245,7 +245,7 @@ h1 {
   border-color: white transparent;
   border-width: 5px;
   transform: rotate(-45deg);
-  animation: ellipseRotate 15s linear infinite;
+  animation: ellipseOrbit 15s linear infinite;
 }
 
 .ellipse__orbit {
