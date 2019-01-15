@@ -52,6 +52,20 @@
 	font-size: 20px;
 	padding: auto;
 }
+/*=======================================
+			FOOTER STYLES
+  =======================================*/
+
+  #footer {
+    color: #00f6ff;
+	font-size: 20px;
+	font-weight: bold;
+	background: url(../images/red&gold.jpg) repeat center fixed;
+	text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
+	margin-top: 100px;
+    padding: 15px 50px 15px 50px;
+    text-align: right;
+}
 
 /* ================================= 
 			Queries

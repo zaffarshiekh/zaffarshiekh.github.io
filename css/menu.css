@@ -1,0 +1,114 @@
+/*===============================================
+	Original Author: Alexandr Izumenko
+================================================*/
+
+.container_a {
+	width: 35px;
+	height: 35px;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	top: 1rem;
+	left: 1rem;
+	margin: auto;
+	cursor: pointer;
+	
+}
+
+.stick {
+	width: 35px;
+	height: 4px;
+	border-radius: 3px;
+	margin-bottom: 5px;
+	background-color:  #2DFDB9;
+	display: inline-block;
+}
+
+.stick:last-child {
+	margin-bottom: 0px;
+}
+
+.stick-1.open {
+	animation: stick-1-open .8s ease-out forwards;
+}
+
+.stick-2.open {
+	animation: stick-2-open .8s linear forwards;
+}
+
+.stick-3.open {
+	animation: stick-3-open .8s linear forwards;
+}
+
+@keyframes stick-1-open {
+	0%   {width: 35px;}
+	40%  {background-color: #ff1456; width: 6px; transform: translate(0px, 10px);}
+	75%, 80%  {width: 5px; transform: translate(18px, -35px); animation-timing-function: cubic-bezier(0,1,1,1);}
+	100% {background-color: #ff1456; width: 3px; transform: translate(10.7px, 18px);}
+}
+
+@keyframes stick-2-open {
+	80%  {background-color: #2DFDB9; transform: translate(0px, 0px) rotate(0deg);}
+	100% {background-color: #ff1456; transform: translate(0px, 0px) rotate(40deg);}
+}
+
+@keyframes stick-3-open {
+	80%  {background-color: #2DFDB9; transform: translate(0px, 0px) rotate(0deg);}
+	100% {background-color: #ff1456; transform: translate(0px, -9.5px) rotate(-40deg);}
+}
+
+.stick-1.close {
+	width: 5px; 
+	transform: translate(10px, 10px);
+	animation: stick-1-close .8s ease-out forwards;
+}
+
+.stick-2.close {
+	transform: translate(0px, 0px) rotate(40deg);
+	animation: stick-2-close .8s ease-out forwards;
+}
+
+.stick-3.close {
+	transform: translate(0px, -9.5px) rotate(-40deg);
+	animation: stick-3-close .8s ease-out forwards;
+}
+
+@keyframes stick-1-close {
+	0%, 70% {width: 0px;}
+	100%    {width: 35px; transform: translate(0, 0);}
+}
+
+@keyframes stick-2-close {
+	0%   {background-color: #ff1456; width: 35px;}
+	20%  {background-color: #ff1456; width: 8px; transform: translate(0, 0px) rotate(40deg);}
+	40%  {background-color: #2DFDB9; width: 0px;}
+	65%  {transform: translate(0, -70px); animation-timing-function: cubic-bezier(0,1,1,1);}
+	80%  {width: 0px;}
+	100% {width: 35px; transform: translate(0, 0px);}
+}
+
+@keyframes stick-3-close {
+	0%   {background-color: #ff1456; width: 35px;}
+	20%  {background-color: #ff1456; width: 8px; transform: translate(0, -9.5px) rotate(-40deg);}
+	40%  {background-color: #2DFDB9;}
+	65%  {transform: translate(0, -93px); animation-timing-function: cubic-bezier(0,1,1,1);}
+	90%  {width: 7px;}
+	100% {width: 35px; transform: translate(0, 0px);}
+}
+
+/*============================
+		In Menu Items
+============================== */
+
+.menu {
+	z-index: 1000000;
+	font-weight: bold;
+	font-size: 2rem;
+	width: 20rem;
+	background: transparent;
+	font-color: white;
+	position: absolute;
+	text-align: center;
+}

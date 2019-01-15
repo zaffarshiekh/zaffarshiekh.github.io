@@ -20,6 +20,17 @@ h1 {
 	font-size: 2.4rem;
 }
 
+a {
+	font-family: "Noto Sans", sans-serif;
+	color: white;
+}
+  
+p {
+	font-size: 16px;
+	line-height: 1.6;
+	color: #a3a3a3; 
+}
+  
 .container_item {
 	margin: 0 auto 0;
 	width: 100%;
@@ -45,75 +56,37 @@ h1 {
 }
 
 .content-wrapper {
-  max-width: 2500px;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
+	max-width: 2500px;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
 }
 
 .header {
-  width: 100%;
-  height: 2rem;
-  padding: 3rem 0;
-  display: block;
-}
-
-.menu-icon {
-  width: 2.5rem;
-  height: 1.5rem;
-  display: inline.block;
-  cursor: pointer;
-}
-
-.header__item {
-  display: inline-block;
-  float: left;
-  padding-left: auto;
-}
-
-.menu-icon__line {
-  width: 2rem;
-  height: .2rem;
-  background: white;
-  display: block;
-}
-
-.menu-icon__line:before, .menu-icon__line:after {
-  content: '';
-  width: 2rem;
-  height: .2rem;
-  background: white;
-  display: inline-block;
-  position: relative;
-}
-
-.menu-icon__line:before {
-  left: 0.5rem;
-  top: -0.6rem;
-}
-
-.menu-icon__line:after {
-  top: -1.8rem;
+	width: 100%;
+	height: 2rem;
+	padding: 3rem 0;
+	display: block;
 }
 
 .heading {
-  width: 100%;
-  font-size: 2rem;
-  font-weight: normal;
-  line-height: 1.2rem;
-  margin: auto auto;
-  text-align: center;
-  color: #bc8f8f;
+	width: 100%;
+	font-size: 2rem;
+	font-weight: normal;
+	line-height: 1.2rem;
+	margin: auto auto;
+	text-align: center;
+	color: #bc8f8f;
 }
 
 .social-container {
-  width: 7.25rem;
-  list-style: none;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  float: right;
+	width: 7.25rem;
+	list-style: none;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+	float: right;
 }
 
 .social-container .social__icon {
@@ -126,75 +99,116 @@ h1 {
 	margin-left: 4rem;
 }
 
+.social-container .social__icon-ay:hover {
+	background: #800000;
+	width: 2.2rem;
+	height: 2.2rem;
+	margin-bottom: .36rem;
+}
+
 .social-container .social__icon-fb {
 	margin-left: 4rem;
 }
 
+.social-container .social__icon-fb:hover {
+	background: #800000;
+	width: 2.18rem;
+	height: 2.15rem;
+	margin-bottom: .4rem;
+}
+
 .social-container .social__icon-gh {
 	margin-left: 4rem;
+}
+.social-container .social__icon-gh:hover {
+	background: #800000;
+	width: 2.2rem;
+	height: 2.18rem;
+	margin-bottom: .37rem;
 }
 
 .social-container .social__icon-in {
 	margin-left: 4rem;
 }
 
+.social-container .social__icon-in:hover {
+	background: #800000;
+	width: 2.1rem;
+	height: 2.1rem;
+	margin-bottom: .45rem;
+}
+
 .social-container .social__icon-yt {
 	margin-left: 4rem;
+}
+
+.social-container .social__icon-yt:hover {
+	background: #800000;
+	width: 2.2rem;
+	height: 2.2rem;
+	margin-bottom: .35rem;
 }
 
 .social-container .social__icon-ig {
 	margin-left: 4rem;
 }
 
+.social-container .social__icon-ig:hover {
+	background: #800000;
+	width: 2.2rem;
+	height: 2.2rem;
+	margin-bottom: .48rem;
+}
+
 .phrase {
-  font-size: 1.5rem;
-  display: inline-block;
-  float: left;
-  position: relative;
-  top: 38rem;
-  font-weight: bold;
-  color: #000 !important;
-  letter-spacing: .1rem;
-  left: -18rem;
-  margin: 0;
-  font-family: "Pristina", sans-sarif;
-  transform: rotate(-90deg) translateY(50%);
+	font-size: 1.5rem;
+	display: inline-block;
+	float: left;
+	position: relative;
+	top: 38rem;
+	font-weight: bold;
+	color: #000 !important;
+	letter-spacing: .1rem;
+	left: -18rem;
+	margin: 0;
+	font-family: "Pristina", sans-sarif;
+	transform: rotate(-90deg) translateY(50%);
 }
 
 .ellipse-container {
-  width: 50rem;
-  height: 50rem;
-  border-radius: 50%;
-  margin: 15rem auto;
-  position: relative;
-  top: -2rem;
+	width: 50rem;
+	height: 50rem;
+	border-radius: 50%;
+	margin: 15rem auto;
+	position: relative;
+	top: -2rem;
 }
 
 .eye {
-  position: absolute;
-  top: -.9rem;
-  right: -1rem;
-  width: 830px;
-  height: 830px;
-  margin: 0 auto;
-  opacity: .3;
-  animation: ellipseOrbit 200s linear infinite;
+	position: absolute;
+	top: -.9rem;
+	right: -1rem;
+	width: 830px;
+	height: 830px;
+	margin: 0 auto;
+	opacity: .3;
+	animation: ellipseOrbit 200s linear infinite;
 }
 
 
 .ellipse-container .greeting {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  top: 20.1rem;
-  right: -1.5rem;
-  margin: auto;
-  text-transform: uppercase;
-  letter-spacing: 3rem;
-  font-size: 8rem;
-  font-weight: normal;
-  opacity: .8;
-  color: #deb887;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	top: 20.1rem;
+	right: -1.5rem;
+	margin: auto;
+	text-transform: uppercase;
+	letter-spacing: 3rem;
+	font-size: 8rem;
+	font-weight: normal;
+	opacity: .8;
+	color: #deb887;
 }
 
 .ellipse-container .greeting:after {
@@ -209,83 +223,81 @@ h1 {
 }
 
 .ellipse {
-  border-radius: 50%;
-  position: absolute;
-  box-sizing: border-box;
-  top: 0;
-  border-style: solid;
+	border-radius: 50%;
+	position: absolute;
+	box-sizing: border-box;
+	top: 0;
+	border-style: solid;
 }
 
 
 .ellipse__outer--thin {
-  width: 100%;
-  height: 100%;
-  border-width: 5px;
-  border-color: rgba(9,56,62,.3);
-  animation: ellipseRotate 15s linear infinite;
+	width: 100%;
+	height: 100%;
+	border-width: 5px;
+	border-color: rgba(9,56,62,.3);
+	animation: ellipseRotate 15s linear infinite;
 }
 
 /**=====================================
 		Border Img Rotation
 ========================================**/
 .ellipse__inner {
-  position: absolute;
-  top: 3rem;
-  right: 3.2rem;
-  width: 87.8%;
-  height: 87.8%;
-  margin: 0 auto;
-  opacity: .2;
-  animation: ellipseRotate 50s linear infinite;
+	position: absolute;
+	top: 3rem;
+	right: 3.2rem;
+	width: 87.8%;
+	height: 87.8%;
+	margin: 0 auto;
+	opacity: .2;
+	animation: ellipseRotate 50s linear infinite;
 }
 
 .ellipse__outer--thick {
-  width: 100%;
-  height: 100%;
-  border-color: white transparent;
-  border-width: 5px;
-  transform: rotate(-45deg);
-  animation: ellipseOrbit 15s linear infinite;
+	width: 100%;
+	height: 100%;
+	border-color: white transparent;
+	border-width: 5px;
+	transform: rotate(-45deg);
+	animation: ellipseOrbit 15s linear infinite;
 }
 
 .ellipse__orbit {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-width: 2px;
-  border-color: white;
-  top: 5rem;
-  right: 6.75rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-width: 2px;
+	border-color: white;
+	top: 5rem;
+	right: 6.75rem;
 }
 
 .ellipse__orbit:before {
-  content: '';
-  width: 0.75rem;
-  height: 0.75rem;
-  border-radius: 50%;
-  position: absolute;
-  display: inline-block;
-  background-color: white;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top:50%;
-  transform: translateY(-50%);
+	content: '';
+	width: 0.75rem;
+	height: 0.75rem;
+	border-radius: 50%;
+	position: absolute;
+	display: inline-block;
+	background-color: white;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top:50%;
+	transform: translateY(-50%);
 }
 
 @keyframes ellipseRotate {
-  0% {
-    transform: rotate(-45deg);
-  }
-  100% {
-    transform: rotate(-405deg);
-  }
+	0% {
+		transform: rotate(-45deg);
 }
+	100% {
+		transform: rotate(-405deg);
+}}
 
 @keyframes ellipseOrbit {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+	0% {
+		transform: rotate(0deg);
 }
+	100% {
+		transform: rotate(360deg);
+}}
